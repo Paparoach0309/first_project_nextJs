@@ -49,11 +49,17 @@
   }
 
   .ListBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     width: 228px;
     height: 160px;
     border: 1px solid #ededed;
     padding-left: 10px;
     margin-bottom: 25px;
+  }
+  .ListBottom p{
+    height: 50px;
   }
   
   .ListButtom {
