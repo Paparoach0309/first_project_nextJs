@@ -36,10 +36,13 @@ interface IProduct {
   id: number;
 }
 
-const cameras = (data: any) => {
+const Сameras = (data: any) => {
   const [priceMin, setPriceMin] = useState<string>();
   const [priceMax, setPriceMax] = useState<string>();
-  const fotoItems: IProduct[] = useMemo(() => data.data.products || [], []);
+  const fotoItems: IProduct[] = useMemo(
+    () => data.data.products || [],
+    [data.data.products]
+  );
   const filterCanon = () =>
     Router.push({
       // pathname: "/cameras",
@@ -96,7 +99,10 @@ const cameras = (data: any) => {
           {/* <button onClick={filterCanon}>Canon</button> */}
         </div>
         <div>
-          <input type="checkbox" onClick={(e) => console.log(e.target.addEventListener)} />
+          <input
+            type="checkbox"
+            onClick={(e) => console.log(e.target.addEventListener)}
+          />
           <label>Nikon</label>
           {/* <button onClick={filterNikon}>Nikon</button> */}
         </div>
@@ -123,4 +129,4 @@ const cameras = (data: any) => {
   );
 };
 
-export default cameras;
+export default Сameras;
