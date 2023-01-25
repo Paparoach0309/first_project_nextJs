@@ -1,0 +1,83 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: top;
+    padding: 6rem;
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+  
+  .sidebar p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #898989;
+  }
+  
+  .sidebar h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .textInputLeft{
+    width:120px;
+    height: 42px;
+    border: 1px solid #DBDBDB;
+    border-radius: 4px 0px 0px 4px;
+  }
+  .textInputRight{
+    width: 120px;
+    height: 42px;
+    border: 1px solid #DBDBDB;
+    border-radius: 0px 4px 4px 0px;
+  }
+
+  .list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    flex-wrap: wrap;
+  }
+  
+  .ListTop {
+    margin-left: 10px;
+  }
+
+  .ListBottom {
+    width: 228px;
+    height: 160px;
+    border: 1px solid #ededed;
+    padding-left: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .ListButtom {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    background-color: #fff;
+    /* background-color: aquamarine; */
+    /* margin-left: 10px; */
+  }
+
+  
+@media (min-width: 301px) and (max-width: 920px) {
+  .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* justify-content: space-between; */
+  align-items: top;
+  padding: 6rem;
+  min-height: 100vh;
+}
+.sidebar {
+  margin-bottom: 20px;
+}
+}
